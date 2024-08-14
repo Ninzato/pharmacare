@@ -1,0 +1,99 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 8rem;
+  padding: 0 14rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7.5rem;
+}
+
+.main-nav {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.logo {
+  height: 6rem;
+}
+
+.banner {
+  width: 100%;
+}
+
+section {
+  padding: 0 14rem;
+}
+
+.number-control {
+  width: fit-content;
+  border: 1px black solid;
+
+  display: flex;
+  align-items: center;
+}
+
+.number-left,
+.number-right {
+  color: black;
+
+  width: 2rem;
+  height: 2.25rem;
+  background-color: #fff;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.3s;
+}
+
+.number-quantity {
+  text-align: center;
+
+  padding: 0.25rem;
+  border: 0;
+  width: 5rem;
+}
+
+.number-quantity:focus {
+  outline-width: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.number-left:hover,
+.number-right:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.hidden {
+  display: none;
+}
