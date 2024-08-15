@@ -5,6 +5,7 @@ const subTotal = document.querySelector(".subTotal");
 const finalTotal = document.querySelector(".finalTotal");
 const btnCloseModal = document.querySelector(".close-modal");
 const btnCheckout = document.querySelector(".btn-checkout");
+const btnKeranjang = document.querySelector(".btn-keranjang");
 
 // Medicine stock data
 const db_obat = [
@@ -224,10 +225,8 @@ function addToCart() {
         cartItems.push(cartItem);
       }
 
-      modal.classList.remove("hidden");
-      overlay.classList.remove("hidden");
       renderCartItems(cartItems);
-      console.log(cartItems);
+      // console.log(cartItems);
     });
   });
 }
@@ -406,13 +405,23 @@ function closeModal() {
   overlay.classList.add("hidden");
 }
 
+function showModal() {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+  renderCartItems(cartItems);
+}
+
 function showMessage() {
   closeModal();
   alert(`Total payment of ${finalTotal.textContent} should be paid during COD`);
   cartItems = [];
+  subTotal.textContent = "Rp 0";
+  finalTotal.textContent = "Rp 0";
 }
 
 btnCheckout.addEventListener("click", showMessage);
+
+btnKeranjang.addEventListener("click", showModal);
 
 btnCloseModal.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
