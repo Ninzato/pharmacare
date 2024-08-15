@@ -20,6 +20,33 @@ body {
   font-family: "Poppins", serif;
 }
 
+header {
+  height: 8rem;
+  padding: 0 14rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7.5rem;
+}
+
+.main-nav {
+  list-style: none;
+  color: var(--main-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.logo {
+  height: 6rem;
+}
+
+.banner{
+  width: 100vw;
+}
+
 section {
   display: flex;
   flex-wrap: wrap;
@@ -135,4 +162,53 @@ input::-webkit-inner-spin-button {
 
 .hidden {
   display: none;
+}
+
+footer {
+  background-color: var(--main-blue);
+  color: white;
+  padding: 1rem 140px;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+}
+
+.footer-image{
+  padding: 1rem;
+}
+
+.footer-image p {
+  margin: 0.25rem;
+}
+
+.footer-list {
+  padding: 2rem;
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.footer-list li{
+  margin: 0.5rem;
+}
+
+.contact {
+  display: flex;
+}
+
+.contact p{
+  margin-left: 0.8rem;
+}
+
+li {
+list-style: none;
+}
+
+.footer-box{
+  border: 1px solid white;
+}
+
+.copyright{
+  margin-top: 1rem;
 }
