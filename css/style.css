@@ -17,43 +17,92 @@ html {
 body {
   margin: 0;
   box-sizing: border-box;
-
   font-family: "Poppins", serif;
 }
 
-.number-control {
-  width: fit-content;
-  border: 1px black solid;
-  border-radius: 0.3rem;
+section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5rem 10vw;
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 1rem;
+  border: none;
+  width: 250px;
+  height: 450px;
+  padding: 2rem;
+}
+
+.card img {
+  max-width: 100%;
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+.item-name-price {
+  align-self: baseline;
+}
+
+.item-name {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.item-price {
+  color: var(--main-blue);
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.available-stock {
+  width: 100%;
+  display: inline;
+  align-self: baseline;
+  font-size: 1.2rem;
+  margin-top: auto;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.number-control {
+  width: 100%;
+  border: none;
+  border-radius: 0.3rem;
   display: flex;
   align-items: center;
+  margin-top: 1rem;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .number-left,
 .number-right {
   color: black;
-
-  width: 2rem;
-  height: 2.25rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: medium;
   background-color: #fff;
   border-radius: 0.3rem;
-
   cursor: pointer;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   transition: background-color 0.3s;
 }
 
 .number-quantity {
   text-align: center;
-
-  padding: 0.25rem;
+  padding: 0.7rem;
   border: 0;
-  width: 5rem;
+  width: 100%;
 }
 
 .number-quantity:focus {
@@ -72,14 +121,16 @@ input::-webkit-inner-spin-button {
 }
 
 .btn-cart {
+  width: 100%;
   color: white;
   font-weight: 500;
   font-size: 1.6rem;
-
   padding: 1rem 2rem;
   background-color: var(--main-blue);
   border: none;
   border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
 }
 
 .hidden {
