@@ -14,7 +14,7 @@
     <title>Pharmacare</title>
   </head>
   <body>
-    <header class="hidden">
+    <header>
       <img src="img/logos/logo-blue.png" alt="Pharmacare logo" class="logo" />
       <nav>
         <ul class="main-nav">
@@ -31,25 +31,8 @@
         alt="Pharmacare medicine banner"
         class="banner"
       />
-      <section>
-        <!-- <div>
-          <img src="img/medicines/tolak-angin.png" alt="Tolak angin" />
-          <div>
-            <p>Tolak Angin</p>
-            <p>Rp. 45.000,-</p>
-          </div>
-          <div>
-            <p>Available stock: <span>90</span></p>
-            <div class="number-control">
-              <div class="number-left">-</div>
-              <input type="number" name="number" class="number-quantity" />
-              <div class="number-right">+</div>
-            </div>
-          </div>
-          <button class="btn-cart">ADD TO CART</button>
-        </div> -->
-      </section>
-      <div class="modal">
+      <section></section>
+      <div class="modal hidden">
         <button class="close-modal">&times;</button>
         <div class="cart-list-header">
           <p class="cart-list-header__product">PRODUCT</p>
@@ -57,41 +40,22 @@
           <p class="cart-list-header__total">TOTAL</p>
         </div>
         <div class="divider"></div>
-        <div class="cart-items">
-          <!-- <div class="cart-item">
-            <div class="cart-item__img-container">
-              <img src="img/medicines/tolak-angin.png" alt="Tolak angin" />
-            </div>
-            <div class="cart-item__details">
-              <p>Tolak Angin</p>
-              <p>Rp. 45.000,-</p>
-            </div>
-            <div class="cart-item__quantity">
-              <div class="number-control">
-                <div class="number-left">-</div>
-                <input type="number" name="number" class="number-quantity" />
-                <div class="number-right">+</div>
-              </div>
-              <img src="img/icons/icon-delete.svg" alt="Delete icon" />
-            </div>
-            <p class="cart-item__total">Rp 90.000</p>
-          </div> -->
-        </div>
+        <div class="cart-items"></div>
         <div class="divider"></div>
         <div class="price-details">
-          <p>Subtotal Rp180.000</p>
+          <p>Subtotal <span class="subTotal">Rp180.000</span></p>
           <div>
-            <p>Total <span>Rp198.000</span></p>
+            <p>Total <span class="finalTotal">Rp198.000</span></p>
             <p>Taxes and shipping is already included in the final amount</p>
           </div>
           <button class="btn-checkout">CHECKOUT</button>
         </div>
       </div>
-      <div class="overlay"></div>
+      <div class="overlay hidden"></div>
     </main>
-    <footer class="hidden">
-      <div>
-        <div>
+    <footer>
+      <div class="footer">
+        <div class="footer-image">
           <img
             src="img/logos/logo-white.png"
             alt="Pharmacare logo"
@@ -99,21 +63,21 @@
           />
           <p>Kota Hacktiv8, Kecamatan Remote, Blok 53 Jalan Foxy, Nomor 1</p>
           <div>
-            <div>
+            <div class="contact">
               <img src="img/icons/icon-phone.svg" alt="Phone icon" />
               <p>000 - 053 - 001</p>
             </div>
-            <div>
+            <div class="contact">
               <img src="img/icons/icon-mail.svg" alt="Email icon" />
               <p>pharmacare@hacktiv8.com</p>
             </div>
-            <div>
+            <div class="contact">
               <img src="img/icons/icon-web.svg" alt="Web icon" />
               <p>www.pharmacare.hacktiv8.com</p>
             </div>
           </div>
         </div>
-        <div>
+        <div class="footer-list">
           <h4>Company</h4>
           <div>
             <ul>
@@ -125,7 +89,7 @@
             </ul>
           </div>
         </div>
-        <div>
+        <div class="footer-list">
           <h4>Help & Support</h4>
           <div>
             <ul>
@@ -137,7 +101,7 @@
             </ul>
           </div>
         </div>
-        <div>
+        <div class="footer-list">
           <h4>Services Cities</h4>
           <div>
             <ul>
@@ -150,8 +114,8 @@
           </div>
         </div>
       </div>
-      <div></div>
-      <div>
+      <div class="footer-box"></div>
+      <div class="copyright">
         <p>
           © 2024 Pharmacare | Design by Hackathon8 Remote Class Batch 053, Team
           1
