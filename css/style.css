@@ -17,13 +17,46 @@ html {
 body {
   margin: 0;
   box-sizing: border-box;
-
   font-family: "Poppins", serif;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap; /* Allow the items to wrap if there's not enough space */
+  gap: 10px; /* Add space between items */
+}
+
+main > div {
+  flex: 1 1 auto; /* Allow the divs to grow and shrink */
+  min-width: 200px; /* Ensure they have some minimum width */
+  padding: 10px; /* Add padding for better visibility */
+  border: 1px solid #ccc; /* Optional: Add a border to make them visible */
+}
+
+.card {
+  background-color: #F0F0F0;
+  border-radius: 1rem;
+  border: none;
+}
+
+.item-name {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.item-price {
+  color: #285575;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.available-stock {
+  display: inline-block;
 }
 
 .number-control {
   width: fit-content;
-  border: 1px black solid;
+  border: none;
   border-radius: 0.3rem;
 
   display: flex;
