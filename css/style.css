@@ -1,3 +1,7 @@
+:root {
+  --main-blue: #285575;
+}
+
 *,
 *::after,
 *::before {
@@ -13,42 +17,14 @@ html {
 body {
   margin: 0;
   box-sizing: border-box;
-}
 
-header {
-  height: 8rem;
-  padding: 0 14rem;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 7.5rem;
-}
-
-.main-nav {
-  list-style: none;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
-}
-
-.logo {
-  height: 6rem;
-}
-
-.banner {
-  width: 100%;
-}
-
-section {
-  padding: 0 14rem;
+  font-family: "Poppins", serif;
 }
 
 .number-control {
   width: fit-content;
   border: 1px black solid;
+  border-radius: 0.3rem;
 
   display: flex;
   align-items: center;
@@ -61,6 +37,7 @@ section {
   width: 2rem;
   height: 2.25rem;
   background-color: #fff;
+  border-radius: 0.3rem;
 
   cursor: pointer;
 
@@ -92,6 +69,17 @@ input::-webkit-inner-spin-button {
 .number-left:hover,
 .number-right:hover {
   background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn-cart {
+  color: white;
+  font-weight: 500;
+  font-size: 1.6rem;
+
+  padding: 1rem 2rem;
+  background-color: var(--main-blue);
+  border: none;
+  border-radius: 0.3rem;
 }
 
 .hidden {
