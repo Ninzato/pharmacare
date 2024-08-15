@@ -14,7 +14,7 @@
     <title>Pharmacare</title>
   </head>
   <body>
-    <header>
+    <header class="hidden">
       <img src="img/logos/logo-blue.png" alt="Pharmacare logo" class="logo" />
       <nav>
         <ul class="main-nav">
@@ -32,7 +32,7 @@
         class="banner"
       />
       <section>
-        <div>
+        <!-- <div>
           <img src="img/medicines/tolak-angin.png" alt="Tolak angin" />
           <div>
             <p>Tolak Angin</p>
@@ -47,8 +47,47 @@
             </div>
           </div>
           <button class="btn-cart">ADD TO CART</button>
-        </div>
+        </div> -->
       </section>
+      <div class="modal">
+        <button class="close-modal">&times;</button>
+        <div class="cart-list-header">
+          <p class="cart-list-header__product">PRODUCT</p>
+          <p class="cart-list-header__quantity">QUANTITY</p>
+          <p class="cart-list-header__total">TOTAL</p>
+        </div>
+        <div class="divider"></div>
+        <div class="cart-items">
+          <!-- <div class="cart-item">
+            <div class="cart-item__img-container">
+              <img src="img/medicines/tolak-angin.png" alt="Tolak angin" />
+            </div>
+            <div class="cart-item__details">
+              <p>Tolak Angin</p>
+              <p>Rp. 45.000,-</p>
+            </div>
+            <div class="cart-item__quantity">
+              <div class="number-control">
+                <div class="number-left">-</div>
+                <input type="number" name="number" class="number-quantity" />
+                <div class="number-right">+</div>
+              </div>
+              <img src="img/icons/icon-delete.svg" alt="Delete icon" />
+            </div>
+            <p class="cart-item__total">Rp 90.000</p>
+          </div> -->
+        </div>
+        <div class="divider"></div>
+        <div class="price-details">
+          <p>Subtotal Rp180.000</p>
+          <div>
+            <p>Total <span>Rp198.000</span></p>
+            <p>Taxes and shipping is already included in the final amount</p>
+          </div>
+          <button class="btn-checkout">CHECKOUT</button>
+        </div>
+      </div>
+      <div class="overlay"></div>
     </main>
     <footer class="hidden">
       <div>
@@ -119,5 +158,7 @@
         </p>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
