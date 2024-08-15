@@ -126,6 +126,7 @@ function renderItems() {
     numberLeftDiv.appendChild(numberLeft);
     numberLeftDiv.classList.add("number-left");
     let inputNumberContainer = document.createElement("input");
+    inputNumberContainer.type = "number";
     inputNumberContainer.placeholder = "1";
     inputNumberContainer.value = 1;
     inputNumberContainer.classList.add("number-quantity");
@@ -159,6 +160,7 @@ function renderItems() {
 
   addQuantity();
   minusQuantity();
+  preventInputBelowOne();
 }
 
 function addQuantity() {
@@ -203,6 +205,17 @@ function minusQuantity() {
       }
     });
   });
+}
+
+function preventInputBelowOne(){
+    const allInputs = document.querySelectorAll("input");
+    allInputs.forEach(input => {
+        input.addEventListener('input', function() {
+            if (this.value < 1) {
+                this.value = 1;
+            }
+        });
+    })
 }
 
 renderItems();
